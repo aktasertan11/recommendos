@@ -66,16 +66,7 @@ jobs:
       run: dotnet build --configuration Release
       working-directory: ./recommendosBackend 
      
-  deploy: 
-    runs-on: ubuntu-latest
-    needs: build
-    
-    steps:
-      - name: Dowloadartifact from build job
-        uses: actions/download-artifact@v3
-        with:
-          name: .net-app
-          
+
 
 
 
