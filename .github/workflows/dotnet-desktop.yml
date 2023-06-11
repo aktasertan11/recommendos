@@ -64,7 +64,7 @@ jobs:
         dotnet-version: 7.0.x
     - name: Build With dotnet
       run: dotnet build --configuration Release
-      working-directory: .\recommendosBackend 
+      working-directory: ./recommendosBackend 
 
 
 
