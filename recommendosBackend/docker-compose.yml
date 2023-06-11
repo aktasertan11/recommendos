@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  recommendosbackend:
+    image: ${DOCKER_REGISTRY-}recommendosbackend
+    build:
+      context: .
+      dockerfile: recommendosBackend/Dockerfile
